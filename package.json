@@ -1,0 +1,33 @@
+{
+  "name": "drip-store-backend",
+  "version": "1.0.0",
+  "description": "API REST de e-commerce - Projeto Back-end",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "db:sync": "node scripts/sync-database.js",
+    "db:migrate": "sequelize-cli db:migrate --config config/config.js",
+    "db:migrate:status": "sequelize-cli db:migrate:status --config config/config.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.12.0",
+    "sequelize": "^6.37.5",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "sequelize-cli": "^6.6.5",
+    "supertest": "^7.0.0"
+  }
+}

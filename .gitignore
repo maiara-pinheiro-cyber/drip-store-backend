@@ -1,0 +1,10 @@
+node_modules/
+.env
+coverage/
+uploads/*
+!uploads/.gitkeep
+.DS_Store
+.env.*
+!.env.example
+backup_drip_store.sql
+config/config.json
